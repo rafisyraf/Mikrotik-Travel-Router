@@ -170,7 +170,7 @@ set [ find default-name=wlan1 ] \
 # 4. WAN Configuration via Modem Connection
 # ------------------------------------------------------------------------------
 # Listen on ether1 for incoming DHCP configuration vectors served by the Orbit
-/ip dhcp-client add interface=ether1 use-peer-dns=yes use-peer-ntp=yes disabled=no comment="Ingress from Telkomsel Orbit"
+/ip dhcp-client add interface=ether1 use-peer-dns=yes use-peer-ntp=yes disabled=no comment="Ingress from Modem"
 
 # ------------------------------------------------------------------------------
 # 5. WireGuard VPN Setup
