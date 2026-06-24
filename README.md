@@ -3,6 +3,13 @@ An Ultra-budget travel router featuring automatic network switching and Wireguar
 
 (Insert Prototype Photo Here)
 
+### Features
+- [x] Connects to Public WIFI via users command
+- [x] Failovers to a Cellular Connection if Public WIFI is unavailable
+- [x] Handles WireGuard VPN connection Up To 30Mbps
+- [x] Broadcasts secure WIFI Connection up to 5 Devices
+- [x] Disconnects to Network Automatically when WireGuard VPN Fails
+
 ## Materials
 ### Hardware
 * **Modem with Data, Wifi Capabilities and has a LAN port** (In my case i used a burner phone)
