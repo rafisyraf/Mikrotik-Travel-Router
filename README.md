@@ -1,6 +1,8 @@
 # Mikrotik-Travel-Router
 An Ultra-budget travel router featuring automatic network switching and Wireguard VPN esuring privacy
 
+(Insert Prototype Photo Here)
+
 ## Materials
 ### Hardware
 * **Modem with Data, Wifi Capabilities and has a LAN port** (In my case i used a burner phone)
@@ -35,7 +37,7 @@ An Ultra-budget travel router featuring automatic network switching and Wireguar
 | **Network Switching** | Manual | Manual / Repeater mode | **Manual** <br>*(User switches Modem between public Wi-Fi & cellular)* |
 | **VPN Performance** | Fast (Relies on phone CPU) | Fast (Dedicated crypto processors) | ⚠️ **Max ~30 Mbps** <br>*(Limited by MikroTik's 650MHz CPU)* |
 
-## 🌐 Network Topology
+## Network Topology
 
 ```mermaid
 graph TD
@@ -81,3 +83,18 @@ graph TD
     %% Final Target Delivery
     F -->|Decrypted WAN Payload / HTTPS| H[Target Destination: Web / Banking Server]
 ```
+
+## Configuration
+### Generating a free WireGuard Configuration Using ProtonVPN
+* Open [ProtonVPN's Website](protonvpn.com) and Register/Signin to your Account
+* On your Account page, Click the **Downlads Button** as shown and scroll down to find the **Wireguard Configuration** Section
+* Copy the options as shown in the Image. You can fill the **Device/Certificate Name** to whatever you like
+<img width="960" height="922" alt="image" src="https://github.com/user-attachments/assets/72cb1469-cc93-496f-9cfb-3ae215b4e410" />
+
+* Once done, you should be able to download the WireGuard Configuration File
+
+### Mikrotik's Configuration
+* Open the [WinBox](https://mikrotik.com/download/winbox) Application
+* Plug in the ethernet cable to the mikrotik's LAN port to the Computer
+* On Winbox, Login to the Router using the **MAC Address** then go to **System -> Reset Configuration** reset it with **No Default Configuration** ticked
+* Once the router is rebooted, Login to the Router's configuration with Winbox and Click **New Terminal**
