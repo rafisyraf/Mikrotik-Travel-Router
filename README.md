@@ -1,6 +1,12 @@
 # Mikrotik-Travel-Router
 An Ultra-budget travel router featuring automatic network switching and Wireguard VPN esuring privacy
 
+![RouterOS Version](https://img.shields.io/badge/RouterOS-v7.x-brightgreen?style=flat-square)
+![VPN Protocol](https://img.shields.io/badge/VPN-WireGuard-blue?style=flat-square)
+![Hardware Platform](https://img.shields.io/badge/Hardware-hAP%20lite-orange?style=flat-square)
+![Power Requirement](https://img.shields.io/badge/Power-5V%20Micro--USB-yellowgreen?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
+
 (Insert Prototype Photo Here)
 
 ### Features
@@ -9,6 +15,8 @@ An Ultra-budget travel router featuring automatic network switching and Wireguar
 - [x] Handles WireGuard VPN connection Up To 30Mbps
 - [x] Broadcasts secure WIFI Connection up to 5 Devices
 - [x] Disconnects to Network Automatically when WireGuard VPN Fails
+- [x] Low Power 5V & Can be connected to any powerbank
+- [x] Portable
 
 ## Materials
 ### Hardware
@@ -19,8 +27,8 @@ An Ultra-budget travel router featuring automatic network switching and Wireguar
 *  **1x Micro USB** (For my case, adjust if needed)
 
 ### Software
-* **WinBox Application** (To access the Mikrotik's Configuration)
-*  **Proton VPN serivce** (Any VPN service will do as long as it supports generationg a WireGuard config file `.conf `)
+* [**WinBox Application**](https://mikrotik.com/download/winbox) (To access the Mikrotik's Configuration)
+* [**Proton VPN serivce**](protonvpn.com) (Any VPN service will do as long as it supports generating a WireGuard config file `.conf `)
 
 ## Thought Proccess
 ### Problem
@@ -105,7 +113,7 @@ graph TD
 * Plug in the ethernet cable to the mikrotik's LAN port to the Computer
 * On Winbox, Login to the Router using the **MAC Address** then go to **System -> Reset Configuration** reset it with **No Default Configuration** ticked
 * Once the router is rebooted, Login to the Router's configuration with Winbox and Click **New Terminal**
-* View The Script [Here](scripts/Mikrotik-Conifg.rsc) Or see it Directly
+* Copy the configuration script below and adjust if needed (View The Script [Here](scripts/Mikrotik-Conifg.rsc) Or see it Directly)
 
 ```routeros
 # ==============================================================================
