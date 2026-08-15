@@ -7,7 +7,7 @@ An Ultra-budget travel router featuring automatic network switching and Wireguar
 ![Power Requirement](https://img.shields.io/badge/Power-5V%20Micro--USB-yellowgreen?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-(Insert Prototype Photo Here)
+<img width="3000" height="3000" alt="20260608_203624" src="https://github.com/user-attachments/assets/9cb83d6a-4902-4239-9d9f-f9e27467d03f" />
 
 ### Features
 - [x] Connects to Public WIFI via users command
